@@ -199,7 +199,7 @@ class PHPFetion5 {
 	 * @return boolean
 	 */
 	protected function _toFriend( $to, $message ) {
-		if( preg_match( '/^(\d){13,13}$/', $to, $matches ) ){
+		if( preg_match( '/^\d{11}$/', $to, $matches ) ){
 			$to = $this -> cellToId( $cell );
 		}
 		if( !$to ){
