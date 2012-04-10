@@ -200,7 +200,7 @@ class PHPFetion5 {
 	 */
 	protected function _toFriend( $to, $message ) {
 		if( preg_match( '/^\d{11}$/', $to, $matches ) ){
-			$to = $this -> cellToId( $cell );
+			$to = $this -> cellToId( $to );
 		}
 		if( !$to ){
 			return FALSE;
